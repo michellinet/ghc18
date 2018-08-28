@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACE20E29CCC04741E16206E1 /* Pods_GHC18.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C0E5627E71E0F0DF15822F /* Pods_GHC18.framework */; };
 		DF72450B213502D00017894C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72450A213502D00017894C /* AppDelegate.swift */; };
 		DF72450D213502D00017894C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72450C213502D00017894C /* FirstViewController.swift */; };
 		DF72450F213502D00017894C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72450E213502D00017894C /* SecondViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12C0E5627E71E0F0DF15822F /* Pods_GHC18.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHC18.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E53B6A109EE0FC32A5630C /* Pods-GHC18.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHC18.release.xcconfig"; path = "Pods/Target Support Files/Pods-GHC18/Pods-GHC18.release.xcconfig"; sourceTree = "<group>"; };
+		B9B3713666F02692798FE3D4 /* Pods-GHC18.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHC18.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GHC18/Pods-GHC18.debug.xcconfig"; sourceTree = "<group>"; };
 		DF724507213502D00017894C /* GHC18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHC18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF72450A213502D00017894C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF72450C213502D00017894C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE20E29CCC04741E16206E1 /* Pods_GHC18.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52E1E649961D2FF8AB452900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C0E5627E71E0F0DF15822F /* Pods_GHC18.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3BA330456E6109864EB225 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B3713666F02692798FE3D4 /* Pods-GHC18.debug.xcconfig */,
+				68E53B6A109EE0FC32A5630C /* Pods-GHC18.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF7244FE213502D00017894C = {
 			isa = PBXGroup;
 			children = (
 				DF724509213502D00017894C /* GHC18 */,
 				DF724508213502D00017894C /* Products */,
+				BC3BA330456E6109864EB225 /* Pods */,
+				52E1E649961D2FF8AB452900 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF72451B213502D00017894C /* Build configuration list for PBXNativeTarget "GHC18" */;
 			buildPhases = (
+				BFB42F2934CB75F93AF469AF /* [CP] Check Pods Manifest.lock */,
 				DF724503213502D00017894C /* Sources */,
 				DF724504213502D00017894C /* Frameworks */,
 				DF724505213502D00017894C /* Resources */,
+				046CF1C2B52E8A09780C1F71 /* [CP] Embed Pods Frameworks */,
+				A4749736ED27C3F324E83BA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		046CF1C2B52E8A09780C1F71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GHC18/Pods-GHC18-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHC18/Pods-GHC18-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4749736ED27C3F324E83BA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GHC18/Pods-GHC18-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFB42F2934CB75F93AF469AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GHC18-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF724503213502D00017894C /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		DF72451C213502D00017894C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B3713666F02692798FE3D4 /* Pods-GHC18.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +373,7 @@
 		};
 		DF72451D213502D00017894C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E53B6A109EE0FC32A5630C /* Pods-GHC18.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

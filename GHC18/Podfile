@@ -7,6 +7,6 @@ target 'GHC18' do
 
   # Pods for GHC18
 
-pod 'SwiftSoup'
+pod ‘SwiftSoup’
 
 end
