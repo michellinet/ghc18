@@ -14,6 +14,7 @@
 		DF724512213502D00017894C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF724510213502D00017894C /* Main.storyboard */; };
 		DF724514213502D00017894C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF724513213502D00017894C /* Assets.xcassets */; };
 		DF724517213502D00017894C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF724515213502D00017894C /* LaunchScreen.storyboard */; };
+		DFEEC68C213C9D630066A8A9 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFEEC68A213C9D630066A8A9 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DF724513213502D00017894C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF724516213502D00017894C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF724518213502D00017894C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFEEC68B213C9D630066A8A9 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		DF7244FE213502D00017894C = {
 			isa = PBXGroup;
 			children = (
+				DFEEC68A213C9D630066A8A9 /* DataModel.xcdatamodeld */,
 				DF724509213502D00017894C /* GHC18 */,
 				DF724508213502D00017894C /* Products */,
 				BC3BA330456E6109864EB225 /* Pods */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF72450F213502D00017894C /* SecondViewController.swift in Sources */,
+				DFEEC68C213C9D630066A8A9 /* DataModel.xcdatamodeld in Sources */,
 				DF72450B213502D00017894C /* AppDelegate.swift in Sources */,
 				DF72450D213502D00017894C /* FirstViewController.swift in Sources */,
 			);
@@ -409,6 +413,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFEEC68A213C9D630066A8A9 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFEEC68B213C9D630066A8A9 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = DFEEC68B213C9D630066A8A9 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DF7244FF213502D00017894C /* Project object */;
 }
